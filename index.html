@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's Your Roadblock? - Personal Growth Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What's Your Roadblock?</h1>
+            <p class="subtitle">Discover what's holding you back from your true potential</p>
+            <p class="description">Based on insights from "See Your Elephant" by Dr. Jo Brown</p>
+        </header>
+
+        <div id="welcome-screen" class="screen active">
+            <div class="content">
+                <h2>Ready to identify your personal barriers?</h2>
+                <p>This assessment will help you discover the primary roadblock preventing you from reaching your full potential. Answer honestly for the most accurate results.</p>
+                <p><strong>Time required:</strong> 5-7 minutes</p>
+                <button id="start-quiz" class="btn btn-primary">Start Assessment</button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress" class="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="current-question">1</span> of <span id="total-questions">10</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h2 id="question-text"></h2>
+                <div id="options-container" class="options-container"></div>
+                <button id="next-question" class="btn btn-primary" disabled>Next Question</button>
+            </div>
+        </div>
+
+        <div id="results-screen" class="screen">
+            <div class="results-container">
+                <h2>Your Primary Roadblock:</h2>
+                <div id="roadblock-result" class="roadblock-result">
+                    <h3 id="roadblock-name"></h3>
+                    <p id="roadblock-description"></p>
+                </div>
+
+                <div id="characteristics-section" class="section">
+                    <h3>Key Characteristics:</h3>
+                    <ul id="characteristics-list"></ul>
+                </div>
+
+                <div id="recommendations-section" class="section">
+                    <h3>Recommendations to Overcome This Roadblock:</h3>
+                    <ul id="recommendations-list"></ul>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="retake-quiz" class="btn btn-secondary">Retake Assessment</button>
+                    <button id="share-results" class="btn btn-primary">Share Results</button>
+                </div>
+
+                <div class="attribution">
+                    <p><em>This assessment is inspired by "See Your Elephant: Discover What's Holding You Back from Your True Potential" by Dr. Jo Brown</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
